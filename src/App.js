@@ -1,25 +1,15 @@
-import logo from './logo.svg';
-import './App.css';
+import Item from "./components/item";
+import Form from "./components/form";
+import Button from "./components/button";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+const App = () => {
+  return <>
+    <h1>Meu Primeiro Component no React</h1>
+    <Item text="React trabalha com Components" />
+    <Item text="Cada Componente pode ter várias Propriedades (Props)" />
+    <Form />
+    <Button />
+  </>
 }
 
 export default App;
